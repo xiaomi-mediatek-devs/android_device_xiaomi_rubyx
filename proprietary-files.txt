@@ -1377,7 +1377,6 @@ vendor/lib64/com.fingerprints.extension@3.0.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 # Fuelgauge
 vendor/bin/fuelgauged
