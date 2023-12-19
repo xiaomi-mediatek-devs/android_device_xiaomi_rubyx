@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     android.hidl.allocator@1.0.vendor
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
