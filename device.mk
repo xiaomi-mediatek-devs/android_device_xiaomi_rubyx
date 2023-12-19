@@ -344,6 +344,7 @@ PRODUCT_PACKAGES += \
 
 # Secure Element
 PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.2.vendor
 
 # Sensors
@@ -399,6 +400,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
+# Xiaomi
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mtdservice@1.3.vendor:64 \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor:64 \
+    vendor.xiaomi.hardware.mfidoca@1.0.vendor:64
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/ruby/ruby-vendor.mk)
