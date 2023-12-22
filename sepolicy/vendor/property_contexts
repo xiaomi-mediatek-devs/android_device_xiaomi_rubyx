@@ -17,6 +17,7 @@ ro.vendor.oem.imei u:object_r:vendor_mtk_radio_prop:s0
 ro.vendor.oem.meid u:object_r:vendor_mtk_radio_prop:s0
 
 # Mlipay
+vendor.sys.rpmb_state                   u:object_r:vendor_mlipay_prop:s0
 persist.vendor.sys.pay.                 u:object_r:vendor_mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0
 

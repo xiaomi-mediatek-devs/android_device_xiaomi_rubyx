@@ -1,3 +1,6 @@
 attribute hal_mlipay;
 attribute hal_mlipay_client;
 attribute hal_mlipay_server;
+attribute hal_mtdservice;
+attribute hal_mtdservice_client;
+attribute hal_mtdservice_server;
