@@ -62,6 +62,9 @@
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi u:object_r:hal_light_default_exec:s0
 
+# Mfidoca
+/(vendor|system/vendor)/bin/fidoca_isee u:object_r:hal_mfidoca_default_exec:s0
+
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd_isee@1\.1          u:object_r:hal_mlipay_default_exec:s0
 
