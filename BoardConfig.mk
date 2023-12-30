@@ -198,4 +198,5 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit the proprietary files
+-include device/xiaomi/miuicamera-rubyx/BoardConfig.mk
 include vendor/xiaomi/rubyx/BoardConfigVendor.mk
