@@ -287,18 +287,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "GPUMinFreq",
-      "Duration": 0,
-      "Value": "670000"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "950000"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "TAUclampMin",
       "Duration": 0,
       "Value": "30"
