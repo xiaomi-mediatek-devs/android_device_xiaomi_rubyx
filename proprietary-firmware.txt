@@ -1,0 +1,18 @@
+# Unpinned blobs from ruby-user 13 TP1A.220624.014 V14.0.6.0.TMOMIXM release-keys
+
+audio_dsp.img;AB
+cam_vpu1.img;AB
+cam_vpu2.img;AB
+cam_vpu3.img;AB
+dpm.img;AB
+gz.img;AB
+lk.img;AB
+logo.bin:logo.img;AB
+mcupm.img;AB
+md1img.img;AB
+pi_img.img;AB
+preloader_ruby.bin:preloader.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
