@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 PRODUCT_PACKAGES += \
+    mtk_plpath_utils \
+    mtk_plpath_utils_recovery
+
+PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
