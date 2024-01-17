@@ -1,4 +1,4 @@
-# Unpinned blobs from ruby-user 13 TP1A.220624.014 V14.0.6.0.TMOMIXM release-keys
+# Unpinned blobs from MIUI V14.0.6.0.TMOMIXM (ruby) fastboot package
 
 audio_dsp.img;AB
 cam_vpu1.img;AB
