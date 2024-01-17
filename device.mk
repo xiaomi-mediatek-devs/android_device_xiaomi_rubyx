@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
+    DolbyManager \
     MtkInCallService
 
 PRODUCT_PACKAGES += \
