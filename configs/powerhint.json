@@ -218,7 +218,7 @@
     },
     {
       "Name": "FGUclampMin",
-      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+      "Path": "/dev/stune/foreground/schedtune.uclamp.min",
       "Values": [
         "100",
         "0"
@@ -227,7 +227,7 @@
     },
     {
       "Name": "TAUclampMin",
-      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+      "Path": "/dev/stune/top-app/schedtune.uclamp.min",
       "Values": [
         "100",
         "30",
@@ -237,7 +237,7 @@
     },
     {
       "Name": "CDUclampMin",
-      "Path": "/dev/cpuctl/camera-daemon/cpu.uclamp.min",
+      "Path": "/dev/stune/camera-daemon/schedtune.uclamp.min",
       "Values": [
         "100",
         "0"
