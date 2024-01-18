@@ -1817,8 +1817,10 @@ vendor/lib/libmtkrillog.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
+vendor/lib64/libgwsdv2-ril.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmnetlink_v104.so
+vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 vendor/lib64/libmtk-ril.so
 vendor/lib64/libmtkares.so
 vendor/lib64/libmtkconfig.so
@@ -1838,6 +1840,7 @@ vendor/lib64/librilfusion.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
+vendor/lib64/libvia-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
