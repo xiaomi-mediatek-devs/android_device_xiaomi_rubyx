@@ -1805,6 +1805,9 @@ vendor/etc/ecc_list_OP18.xml
 vendor/etc/ecc_list_OP20.xml
 vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
+vendor/etc/rsc/CN/ro.prop
+vendor/etc/rsc/GL/ro.prop
+vendor/etc/rsc/IN/ro.prop
 vendor/etc/special_pws_channel.xml
 vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
