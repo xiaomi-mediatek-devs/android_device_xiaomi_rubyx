@@ -217,8 +217,8 @@
       "DefaultIndex": 0
     },
     {
-      "Name": "FGUclampMin",
-      "Path": "/dev/stune/foreground/schedtune.uclamp.min",
+      "Name": "FGSchedtuneBoost",
+      "Path": "/dev/stune/foreground/schedtune.boost",
       "Values": [
         "100",
         "0"
@@ -226,18 +226,18 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TAUclampMin",
-      "Path": "/dev/stune/top-app/schedtune.uclamp.min",
+      "Name": "TASchedtuneBoost",
+      "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
         "100",
-        "30",
-        "0"
+        "40",
+        "1"
       ],
       "ResetOnInit": true
     },
     {
-      "Name": "CDUclampMin",
-      "Path": "/dev/stune/camera-daemon/schedtune.uclamp.min",
+      "Name": "CDSchedtuneBoost",
+      "Path": "/dev/stune/camera-daemon/schedtune.boost",
       "Values": [
         "100",
         "0"
@@ -287,9 +287,9 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "TAUclampMin",
+      "Node": "TASchedtuneBoost",
       "Duration": 0,
-      "Value": "30"
+      "Value": "40"
     },
     {
       "PowerHint": "LAUNCH",
@@ -317,13 +317,13 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "FGUclampMin",
+      "Node": "FGSchedtuneBoost",
       "Duration": 3000,
       "Value": "100"
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "TAUclampMin",
+      "Node": "TASchedtuneBoost",
       "Duration": 3000,
       "Value": "100"
     },
@@ -335,7 +335,7 @@
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
-      "Node": "CDUclampMin",
+      "Node": "CDSchedtuneBoost",
       "Duration": 1000,
       "Value": "100"
     },
