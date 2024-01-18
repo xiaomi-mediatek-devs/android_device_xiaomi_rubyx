@@ -4,3 +4,14 @@ on init
 
 on post-fs
     exec u:r:update_engine:s0 root root -- /system/bin/mtk_plpath_utils_recovery
+
+    # Wait for the dm devices to be created
+    wait /dev/block/mapper/preloader_a
+    wait /dev/block/mapper/preloader_b
+
+    # Symlink the dm devices to the real devices
+    symlink /dev/block/mapper/preloader_a /dev/block/by-name/preloader_a
+    symlink /dev/block/mapper/preloader_b /dev/block/by-name/preloader_b
+
+    symlink /dev/block/mapper/preloader_a /dev/block/platform/11270000.ufshci/by-name/preloader_a
+    symlink /dev/block/mapper/preloader_b /dev/block/platform/11270000.ufshci/by-name/preloader_b
