@@ -85,6 +85,9 @@ on init
     write /dev/stune/rt/schedtune.prefer_idle 0
     write /dev/stune/top-app/schedtune.boost 1
 
+    # Turn on scheduler boost at boot
+    write /dev/stune/schedtune.boost 100
+
 on enable-low-power
     # Enable UFS powersaving
     write /sys/devices/platform/11270000.ufshci/clkgate_enable 1
@@ -111,6 +114,9 @@ on enable-low-power
     write /sys/kernel/ged/hal/dvfs_margin_value 130
     write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
     write /sys/kernel/ged/hal/loading_base_dvfs_step 4
+
+    # Turn off scheduler boost after boot
+    write /dev/stune/schedtune.boost 0
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
