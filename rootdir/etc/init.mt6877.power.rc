@@ -115,6 +115,11 @@ on enable-low-power
     write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
     write /sys/kernel/ged/hal/loading_base_dvfs_step 4
 
+    # Configure touch boost
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1310000 1:1310000 2:1310000 3:1310000 4:1310000 5:1310000 6:1540000 7:1540000"
+    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 200
+    write /sys/devices/system/cpu/cpu_boost/sched_boost_on_input 1
+
     # Turn off scheduler boost after boot
     write /dev/stune/schedtune.boost 0
 
