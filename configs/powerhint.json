@@ -236,7 +236,6 @@
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
         "100",
-        "7",
         "1"
       ],
       "ResetOnInit": true
@@ -290,12 +289,6 @@
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
       "Value": "910000"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "7"
     },
     {
       "PowerHint": "LAUNCH",
