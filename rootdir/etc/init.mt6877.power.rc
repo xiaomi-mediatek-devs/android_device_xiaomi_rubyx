@@ -11,6 +11,9 @@ on property:init.svc.vendor.charger=running
     write /sys/devices/system/cpu/cpu7/online 0
 
 on init
+    # Set PELT multiplier to 2, which is equivalent to a 16ms half-life.
+    write /proc/sys/kernel/sched_pelt_multiplier 2
+
     # Disable UFS powersaving
     write /sys/devices/platform/11270000.ufshci/clkgate_enable 0
 
