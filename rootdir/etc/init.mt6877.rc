@@ -53,7 +53,7 @@ on charger
 
     # Turn backlight on and switch to backlight trigger
     write /sys/class/leds/lcd-backlight/brightness "1000"
-    write /sys/class/leds/lcd-backlight/trigger "backlight"
+    write /sys/class/leds/lcd-backlight/trigger "backlight-drm"
 
 on fs
     start vendor.boot-hal-1-2
