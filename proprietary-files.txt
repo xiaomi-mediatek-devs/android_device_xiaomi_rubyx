@@ -1,4 +1,4 @@
-# Unpinned blobs from ruby-user 13 TP1A.220624.014 V14.0.6.0.TMOMIXM release-keys
+# Unpinned blobs from ruby-user 14 UP1A.231005.007 V816.0.1.0.UMOMIXM release-keys
 
 # AEE
 vendor/lib/libaedv.so
@@ -298,6 +298,7 @@ vendor/bin/batterysecret
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/firmware/BT_FW.cfg
+vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin
 vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib/libbluetooth_mtk.so
 vendor/lib/libbluetooth_mtk_pure.so
@@ -311,9 +312,6 @@ vendor/lib64/libbt-vendor.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
-# Bluetooth (Firmware) - from a34xxx-user 13 TP1A.220624.014 A346BXXU3AWF1 release-keys
-vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin|da82964b87491348caf2e7ebf761cdec7cb8066e
-
 # Camera
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
@@ -323,7 +321,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
-vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/imx766ofilm2_mipi_raw_IdxMgr.so
 vendor/lib64/imx766ofilm2_mipi_raw_tuning.so
 vendor/lib64/imx766ofilm_mipi_raw_IdxMgr.so
@@ -1147,6 +1144,7 @@ vendor/lib64/libvidhance.so
 vendor/lib64/libvidhance_active_ois.so
 vendor/lib64/libvidhance_ldc.so
 vendor/lib64/libvidhance_stabilizer.so
+vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/ov02b10aac_mipi_raw_IdxMgr.so
 vendor/lib64/ov02b10aac_mipi_raw_tuning.so
 vendor/lib64/ov02b10sunny_mipi_raw_IdxMgr.so
@@ -1174,12 +1172,6 @@ vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Camera Configs
-vendor/etc/camera/model/dof_model/capture_cache
-vendor/etc/camera/model/dof_model/capture_model
-vendor/etc/camera/model/dof_model/capture_policy
-vendor/etc/camera/model/rt_model/preview_cache
-vendor/etc/camera/model/rt_model/preview_model
-vendor/etc/camera/model/rt_model/preview_policy
 vendor/etc/camera/LDC_packdata_xiaomi_v1.dat
 vendor/etc/camera/LDC_packdata_xiaomi_v2.dat
 vendor/etc/camera/aivsModels1
@@ -1192,6 +1184,12 @@ vendor/etc/camera/dualcam_bokeh_params.json
 vendor/etc/camera/fold_qianzhi_512_edutpu140_ar36912_depth128_dd48_2_128_inscale_q12qrqfct_rotate45_scale_distortcolor_quantaware_step205420_without_softmax_mdla20_vpu.dla
 vendor/etc/camera/libalfpc_tuning.bin
 vendor/etc/camera/miai_psn_config.yaml
+vendor/etc/camera/model/dof_model/capture_cache
+vendor/etc/camera/model/dof_model/capture_model
+vendor/etc/camera/model/dof_model/capture_policy
+vendor/etc/camera/model/rt_model/preview_cache
+vendor/etc/camera/model/rt_model/preview_model
+vendor/etc/camera/model/rt_model/preview_policy
 vendor/etc/camera/preview_bokeh_params.json
 vendor/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_mdla20.dla
 vendor/etc/camera/sceneDetection.xml
@@ -1203,14 +1201,12 @@ vendor/etc/camera/vidhance_calibration_ofilm
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/firmware/conninfra.cfg
+vendor/firmware/soc5_0_ram_mcu_1_1_hdr.bin
+vendor/firmware/soc5_0_ram_wmmcu_1_1_hdr.bin
 vendor/firmware/txpowerctrl_gl.cfg
 vendor/firmware/txpowerctrl_gl_u.cfg
 vendor/firmware/txpowerctrl_in.cfg
 vendor/firmware/txpowerctrl_in_u.cfg
-
-# Connectivity (Firmware) - from a34xxx-user 13 TP1A.220624.014 A346BXXU3AWF1 release-keys
-vendor/firmware/soc5_0_ram_mcu_1_1_hdr.bin|4aef2e830860f76b4d0c383eb16433ecc0e1c740
-vendor/firmware/soc5_0_ram_wmmcu_1_1_hdr.bin|81f9c347afd4ee17a257cb07c4762c97c17d7db3
 
 # ConsumerIr
 vendor/lib64/hw/consumerir.common.so
@@ -1220,6 +1216,7 @@ vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
+vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
 vendor/lib/egl/libGLES_meow.so
@@ -1231,12 +1228,6 @@ vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.14-impl.so
 vendor/lib/hw/vulkan.mali.so
-vendor/lib/mt6877/libaiselector.so:vendor/lib/libaiselector.so
-vendor/lib/mt6877/libdpframework.so:vendor/lib/libdpframework.so
-vendor/lib/mt6877/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
-vendor/lib/mt6877/libnir_neon_driver.so:vendor/lib/libnir_neon_driver.so
-vendor/lib/mt6877/libpq_prot.so:vendor/lib/libpq_prot.so
-vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
 vendor/lib/libNoFpsActor.so
@@ -1262,6 +1253,11 @@ vendor/lib/libpqframework.so
 vendor/lib/libpqparamparser.so
 vendor/lib/libpqpconfig.so
 vendor/lib/libudf.so
+vendor/lib/mt6877/libaiselector.so:vendor/lib/libaiselector.so
+vendor/lib/mt6877/libdpframework.so:vendor/lib/libdpframework.so
+vendor/lib/mt6877/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
+vendor/lib/mt6877/libnir_neon_driver.so:vendor/lib/libnir_neon_driver.so
+vendor/lib/mt6877/libpq_prot.so:vendor/lib/libpq_prot.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.0.so
@@ -1279,6 +1275,7 @@ vendor/lib/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib/vendor.mediatek.hardware.pq@2.9.so
+vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
@@ -1290,12 +1287,6 @@ vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6877.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.14-impl.so
 vendor/lib64/hw/vulkan.mali.so
-vendor/lib64/mt6877/libaiselector.so:vendor/lib64/libaiselector.so
-vendor/lib64/mt6877/libdpframework.so:vendor/lib64/libdpframework.so
-vendor/lib64/mt6877/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
-vendor/lib64/mt6877/libnir_neon_driver.so:vendor/lib64/libnir_neon_driver.so
-vendor/lib64/mt6877/libpq_prot.so:vendor/lib64/libpq_prot.so
-vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
@@ -1322,6 +1313,11 @@ vendor/lib64/libpqframework.so
 vendor/lib64/libpqparamparser.so
 vendor/lib64/libpqpconfig.so
 vendor/lib64/libudf.so
+vendor/lib64/mt6877/libaiselector.so:vendor/lib64/libaiselector.so
+vendor/lib64/mt6877/libdpframework.so:vendor/lib64/libdpframework.so
+vendor/lib64/mt6877/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
+vendor/lib64/mt6877/libnir_neon_driver.so:vendor/lib64/libnir_neon_driver.so
+vendor/lib64/mt6877/libpq_prot.so:vendor/lib64/libpq_prot.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
@@ -1351,12 +1347,12 @@ vendor/etc/cust_color_dsi_m16_45_02_0c_dsc_vdo.xml
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
-vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so
+vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Fido
 vendor/bin/fidoca_isee
@@ -1365,9 +1361,9 @@ vendor/lib64/libmfido_isee.so
 
 # Fingerprint
 -vendor/etc/vintf/manifest/fod.xml
+vendor/lib64/com.fingerprints.extension@3.0.so
 vendor/lib64/hw/fingerprint.fpc_isee.so:vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/com.fingerprints.extension@3.0.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
@@ -1386,6 +1382,7 @@ vendor/lib64/hw/gatekeeper.beanpod.so
 vendor/bin/hw/android.hardware.gnss-service.mediatek
 vendor/bin/mnld
 vendor/bin/mtk_agpsd
+vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CMCC.xml
@@ -1401,12 +1398,11 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
-vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 vendor/etc/init/mtk_agpsd_p.rc
+vendor/etc/slp_conf
 -vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
 -vendor/etc/vintf/manifest/gnss@2.1-service.xml
-vendor/etc/slp_conf
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
@@ -1418,39 +1414,39 @@ vendor/lib64/libmnl.so
 -product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IMS - from plato-user 14 UP1A.230620.001 V14.0.7.0.ULQMIXM release-keys
--system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar|895c6819d00deb385675cc7b90f073d0b6fbd29d
--system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar|a9789fd904f4b0643a3257e798318faabf342477
--system_ext/framework/mediatek-ims-base.jar:framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
--system_ext/framework/mediatek-ims-common.jar:framework/mediatek-ims-common.jar|8fc8f9dbbe56a309fa620222430cc854143672fb
--system_ext/framework/mediatek-ims-extension-plugin.jar:framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
--system_ext/framework/mediatek-telecom-common.jar:framework/mediatek-telecom-common.jar|686eaf0a472f44194116a0861944483cd9b09a38
--system_ext/framework/mediatek-telephony-base.jar:framework/mediatek-telephony-base.jar|f66b872e413d16fc29d22ead4e94984f84be94e9
--system_ext/framework/mediatek-telephony-common.jar:framework/mediatek-telephony-common.jar|869c6918a945ecb87d8b30ec5ca4056d6b863099
-system_ext/bin/vtservice|59adc81ee1ad1f3fb4942cd6e8e7100325002eb2
-system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
-system_ext/lib64/libcomutils.so|6d9cd979f33ef01cb26861a38a59e76e1c2a3acb
-system_ext/lib64/libimsma_adapt.so|b95939f797ba52d87bb9fa6ebf356e0fb4fcfe56
-system_ext/lib64/libimsma_rtp.so|02b33fba68211362b439bb05a965ba6e01fa3ea0
-system_ext/lib64/libimsma_socketwrapper.so|1f9b83322c41e5b0a7b3130f74a38ddb14f578d8
-system_ext/lib64/libimsma.so|547ffdd8a8d57d6624b69eb27ac0e1642aab09bc
-system_ext/lib64/libmtk_vt_service.so|c46d43d49fb35e21cb34cdea1f33ad4b964e2f22
-system_ext/lib64/libmtk_vt_wrapper.so|b6f8737a084431cdd8d77c9188e176b7e9364876
-system_ext/lib64/libsignal.so|0f55bb64c660fe4cda2b695121580b054f026e73
-system_ext/lib64/libsink.so|15cb9262fd9e52cd29086f602bc3dafb52ab40b5|94972e8c36b576cbe74ecefbe72526714c1e1e16
-system_ext/lib64/libsource.so|8e702370bfd7bce526f18e31e71ed8a9942b2c38
-system_ext/lib64/libvcodec_cap.so|0165b65cd33fd3905ef3f569ff36bf119b27c13d
-system_ext/lib64/libvcodec_capenc.so|3b5e76522a7331248c2864493fdade2bdf73c4c3
-system_ext/lib64/libvt_avsync.so|632cb05532ef2e022072d91bff3c1ae47c888b7e
-system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|b4733a99049d5162e41955bca80cc78b8ca76c53
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|1385634094de90c59b9f689d313b6b3ee8770efe
+# IMS
+system_ext/bin/vtservice
+system_ext/etc/init/init.vtservice.rc
+-system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar
+-system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar
+-system_ext/framework/mediatek-ims-base.jar:framework/mediatek-ims-base.jar
+-system_ext/framework/mediatek-ims-common.jar:framework/mediatek-ims-common.jar
+-system_ext/framework/mediatek-ims-extension-plugin.jar:framework/mediatek-ims-extension-plugin.jar
+-system_ext/framework/mediatek-telecom-common.jar:framework/mediatek-telecom-common.jar
+-system_ext/framework/mediatek-telephony-base.jar:framework/mediatek-telephony-base.jar
+-system_ext/framework/mediatek-telephony-common.jar:framework/mediatek-telephony-common.jar
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libimsma.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvt_avsync.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# IMS (App) - from plato-user 14 UP1A.230620.001 V14.0.7.0.ULQMIXM release-keys (patched)
--system_ext/priv-app/ImsService/ImsService.apk:priv-app/ImsService/ImsService.apk|62e6a0c457812366623630dffef27b0bf5ca7fad
+# IMS (App) - from ruby-user 14 UP1A.231005.007 V816.0.1.0.UMOMIXM release-keys (patched)
+-system_ext/priv-app/ImsService/ImsService.apk:priv-app/ImsService/ImsService.apk|c9f70a060fe69e341caa0e0eecb06ec092e6c9f0
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
 vendor/bin/bp_kmsetkey_ca
+vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
 vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 
@@ -1666,9 +1662,6 @@ vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml
 vendor/lib/libOpenCL.so
-vendor/lib64/mt6877/libneuron_platform.vpu.so:vendor/lib64/libneuron_platform.vpu.so
-vendor/lib64/mt6877/libneuron_runtime.5.so:vendor/lib64/libneuron_runtime.5.so
-vendor/lib64/mt6877/libneuron_runtime.so:vendor/lib64/libneuron_runtime.so
 vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer_v2.so
@@ -1686,6 +1679,9 @@ vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuron_wrapper.so
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/mt6877/libneuron_platform.vpu.so:vendor/lib64/libneuron_platform.vpu.so
+vendor/lib64/mt6877/libneuron_runtime.5.so:vendor/lib64/libneuron_runtime.5.so
+vendor/lib64/mt6877/libneuron_runtime.so:vendor/lib64/libneuron_runtime.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
@@ -1757,8 +1753,8 @@ vendor/lib64/libformatter.so
 # Mlipay
 vendor/bin/mlipayd_isee@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc
-vendor/lib64/libmlipay_isee@1.1.so
 vendor/lib64/libmlipay_isee.so
+vendor/lib64/libmlipay_isee@1.1.so
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
@@ -1782,19 +1778,14 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 # Mtdservice
 vendor/bin/mtd_isee@1.3
 vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc
-vendor/lib64/libmt_isee@1.3.so
 vendor/lib64/libmt_isee.so
+vendor/lib64/libmt_isee@1.3.so
 
 # Radio
-vendor/bin/hw/mtkfusionrild
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/gsm0710muxd
-vendor/etc/init/gsm0710muxd.rc
-vendor/etc/init/init.cccimdinit.rc
-vendor/etc/init/init.cccirpcd.rc
-vendor/etc/init/mtkrild.rc
-vendor/etc/init/muxreport.rc
+vendor/bin/hw/mtkfusionrild
 vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/ecc_list_OP02.xml
@@ -1805,6 +1796,11 @@ vendor/etc/ecc_list_OP18.xml
 vendor/etc/ecc_list_OP20.xml
 vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
+vendor/etc/init/gsm0710muxd.rc
+vendor/etc/init/init.cccimdinit.rc
+vendor/etc/init/init.cccirpcd.rc
+vendor/etc/init/mtkrild.rc
+vendor/etc/init/muxreport.rc
 vendor/etc/special_pws_channel.xml
 vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
@@ -1893,8 +1889,6 @@ vendor/firmware/aw8697_rtp_1.bin
 vendor/bin/wlan_assistant
 vendor/etc/init/wlan_assistant.rc
 vendor/etc/wifi/passpointProfile.conf
+vendor/firmware/WIFI_RAM_CODE_soc5_0_1_1.bin
 vendor/firmware/wifi.cfg
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
-
-# Wi-Fi (Firmware) - from a34xxx-user 13 TP1A.220624.014 A346BXXU3AWF1 release-keys
-vendor/firmware/WIFI_RAM_CODE_soc5_0_1_1.bin|a5eac373bd44011512f43fb0cbd38482349be367
