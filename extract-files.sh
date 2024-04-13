@@ -62,10 +62,6 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
             "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;
-        vendor/bin/hw/android.hardware.gnss-service.mediatek |\
-        vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
-            "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
-            ;;
         vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
             sed -i 's/start/enable/' "$2"
             ;;
