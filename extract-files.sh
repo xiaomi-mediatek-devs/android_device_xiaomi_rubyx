@@ -60,7 +60,7 @@ fi
 function blob_fixup {
     case "$1" in
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
-            "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
+            grep -q "libstagefright_foundation-v33.so" "$2" || "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;
         vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
             sed -i 's/start/enable/' "$2"
@@ -70,17 +70,17 @@ function blob_fixup {
             ;;
         vendor/bin/mnld|\
         vendor/lib*/libaalservice.so)
-            "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
+            grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.14-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
-            "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
+            grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
         vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
         system_ext/lib64/libsink.so)
-            "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
+            grep -q "libshim_sink.so" "$2" || "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
             ;;
     esac
 }
