@@ -73,6 +73,7 @@ function blob_fixup {
             grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
         vendor/lib*/hw/audio.primary.mt6877.so)
+            grep -q "libstagefright_foundation-v33.so" "$2" || "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v31.so" "$2"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.14-impl.so)
