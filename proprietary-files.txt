@@ -1,4 +1,4 @@
-# Unpinned blobs from ruby-user 14 UP1A.231005.007 V816.0.1.0.UMOMIXM release-keys
+# Unpinned blobs from ruby-user 14 UP1A.230620.001 V816.0.3.0.UMOMIXM release-keys
 
 # AEE
 vendor/lib/libaedv.so
@@ -1446,8 +1446,8 @@ system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# IMS (App) - from ruby-user 14 UP1A.231005.007 V816.0.1.0.UMOMIXM release-keys (patched)
--system_ext/priv-app/ImsService/ImsService.apk:priv-app/ImsService/ImsService.apk|c9f70a060fe69e341caa0e0eecb06ec092e6c9f0
+# IMS (App) - from ruby-user 14 UP1A.230620.001 V816.0.3.0.UMOMIXM release-keys (patched)
+-system_ext/priv-app/ImsService/ImsService.apk:priv-app/ImsService/ImsService.apk|a33b3f0cac25b32af3b452c5c04f8140d5acf676
 
 # Keymaster
 vendor/bin/bp_kmsetkey_ca
