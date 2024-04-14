@@ -3,6 +3,3 @@ type vendor_displayfeature_device, dev_type;
 
 # Power
 type vendor_touchfeature_device, dev_type;
-
-# Raw HID device
-type hidraw_device, dev_type;
