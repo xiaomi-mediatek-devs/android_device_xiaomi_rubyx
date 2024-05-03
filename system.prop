@@ -1,3 +1,6 @@
+# Camera
+ro.product.mod_device=ruby_global
+
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
