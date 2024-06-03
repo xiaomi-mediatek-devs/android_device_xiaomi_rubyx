@@ -169,6 +169,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "SchedBoost",
+      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "PowerHALAudioState",
       "Path": "vendor.powerhal.audio",
       "Values": ["AUDIO_STREAMING_LOW_LATENCY", ""],
@@ -269,6 +278,12 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "DRAMOppMin",
+      "Duration": 3000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "SchedBoost",
       "Duration": 3000,
       "Value": "1"
     },
