@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=ruby
+DEVICE=rubyx
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

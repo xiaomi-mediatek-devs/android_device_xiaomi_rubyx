@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),ruby)
+ifeq ($(TARGET_DEVICE),rubyx)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

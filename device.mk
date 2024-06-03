@@ -440,4 +440,4 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mfidoca@1.0.vendor:64
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/ruby/ruby-vendor.mk)
+$(call inherit-product, vendor/xiaomi/rubyx/rubyx-vendor.mk)
