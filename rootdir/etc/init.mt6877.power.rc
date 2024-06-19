@@ -31,7 +31,7 @@ on init
 
     # Configure scheduler up/down_rate_limit_us
     write /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us 1000
+    write /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us 20000
 
     # update cpus for cpuset cgroup
     write /dev/cpuset/foreground/cpus 0-2,4-7
