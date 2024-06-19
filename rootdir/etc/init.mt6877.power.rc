@@ -82,7 +82,7 @@ on enable-low-power
     # top-app
     write /dev/cpuctl/top-app/cpu.uclamp.max max
     write /dev/cpuctl/top-app/cpu.uclamp.min 0
-    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 0
 
     # background
     # cap the max utilisation for background tasks to save power.
