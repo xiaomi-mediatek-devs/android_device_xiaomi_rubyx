@@ -25,13 +25,13 @@ on init
 
     # Configure governor settings for little cluster
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 1000
 
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us 1000
+
+    # Configure scheduler up/down_rate_limit_us
+    write /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us 1000
 
     # update cpus for cpuset cgroup
     write /dev/cpuset/foreground/cpus 0-2,4-7
