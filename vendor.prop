@@ -190,11 +190,6 @@ ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
 
-# Power
-vendor.powerhal.interaction.min=10
-vendor.powerhal.interaction.max=50
-vendor.powerhal.interaction.offset=0
-
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.md_c2k_cap_dep_check=0
