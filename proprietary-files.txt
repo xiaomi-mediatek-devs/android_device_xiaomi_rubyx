@@ -1446,8 +1446,8 @@ system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# IMS (App) - from ruby-user 14 UP1A.230620.001 V816.0.3.0.UMOMIXM release-keys (patched)
--system_ext/priv-app/ImsService/ImsService.apk:priv-app/ImsService/ImsService.apk|a33b3f0cac25b32af3b452c5c04f8140d5acf676
+# IMS (App) - from ruby-user 14 UP1A.231005.007 V816.0.4.0.UMOMIXM release-keys (patched)
+-system_ext/priv-app/ImsService/ImsService.apk:priv-app/ImsService/ImsService.apk|52fa51e4df82ccd6f653e30536f68e419734a707
 
 # Keymaster
 vendor/bin/bp_kmsetkey_ca
