@@ -1,4 +1,4 @@
-# Unpinned blobs from HyperOS V816.0.3.0.UMOMIXM (ruby) fastboot package
+# Unpinned blobs from HyperOS V816.0.4.0.UMOMIXM (ruby) fastboot package
 
 audio_dsp.img;AB
 cam_vpu1.img;AB
