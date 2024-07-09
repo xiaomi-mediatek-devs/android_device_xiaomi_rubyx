@@ -1258,11 +1258,11 @@ vendor/lib/libpqframework.so
 vendor/lib/libpqparamparser.so
 vendor/lib/libpqpconfig.so
 vendor/lib/libudf.so
-vendor/lib/mt6877/libaiselector.so:vendor/lib/libaiselector.so
-vendor/lib/mt6877/libdpframework.so:vendor/lib/libdpframework.so
-vendor/lib/mt6877/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
-vendor/lib/mt6877/libnir_neon_driver.so:vendor/lib/libnir_neon_driver.so
-vendor/lib/mt6877/libpq_prot.so:vendor/lib/libpq_prot.so
+vendor/lib/mt6877/libaiselector.so;SYMLINK=vendor/lib/libaiselector.so
+vendor/lib/mt6877/libdpframework.so;SYMLINK=vendor/lib/libdpframework.so
+vendor/lib/mt6877/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
+vendor/lib/mt6877/libnir_neon_driver.so;SYMLINK=vendor/lib/libnir_neon_driver.so
+vendor/lib/mt6877/libpq_prot.so;SYMLINK=vendor/lib/libpq_prot.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.0.so
@@ -1318,11 +1318,11 @@ vendor/lib64/libpqframework.so
 vendor/lib64/libpqparamparser.so
 vendor/lib64/libpqpconfig.so
 vendor/lib64/libudf.so
-vendor/lib64/mt6877/libaiselector.so:vendor/lib64/libaiselector.so
-vendor/lib64/mt6877/libdpframework.so:vendor/lib64/libdpframework.so
-vendor/lib64/mt6877/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
-vendor/lib64/mt6877/libnir_neon_driver.so:vendor/lib64/libnir_neon_driver.so
-vendor/lib64/mt6877/libpq_prot.so:vendor/lib64/libpq_prot.so
+vendor/lib64/mt6877/libaiselector.so;SYMLINK=vendor/lib64/libaiselector.so
+vendor/lib64/mt6877/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
+vendor/lib64/mt6877/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
+vendor/lib64/mt6877/libnir_neon_driver.so;SYMLINK=vendor/lib64/libnir_neon_driver.so
+vendor/lib64/mt6877/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
@@ -1367,8 +1367,8 @@ vendor/lib64/libmfido_isee.so
 # Fingerprint
 -vendor/etc/vintf/manifest/fod.xml
 vendor/lib64/com.fingerprints.extension@3.0.so
-vendor/lib64/hw/fingerprint.fpc_isee.so:vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.fpc_isee.so;SYMLINK=vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.goodix.so;SYMLINK=vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
@@ -1684,9 +1684,9 @@ vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuron_wrapper.so
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
-vendor/lib64/mt6877/libneuron_platform.vpu.so:vendor/lib64/libneuron_platform.vpu.so
-vendor/lib64/mt6877/libneuron_runtime.5.so:vendor/lib64/libneuron_runtime.5.so
-vendor/lib64/mt6877/libneuron_runtime.so:vendor/lib64/libneuron_runtime.so
+vendor/lib64/mt6877/libneuron_platform.vpu.so;SYMLINK=vendor/lib64/libneuron_platform.vpu.so
+vendor/lib64/mt6877/libneuron_runtime.5.so;SYMLINK=vendor/lib64/libneuron_runtime.5.so
+vendor/lib64/mt6877/libneuron_runtime.so;SYMLINK=vendor/lib64/libneuron_runtime.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
@@ -1743,7 +1743,7 @@ vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
 
 # Media (C2)
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;SYMLINK=vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
 vendor/lib64/libcodec2_mtk_c2store.so

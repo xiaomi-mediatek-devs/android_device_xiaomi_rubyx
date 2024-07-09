@@ -59,7 +59,7 @@ fi
 
 function blob_fixup {
     case "$1" in
-        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             grep -q "libstagefright_foundation-v33.so" "$2" || "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;
         vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
