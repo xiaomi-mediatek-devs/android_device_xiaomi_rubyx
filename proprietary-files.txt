@@ -1871,15 +1871,6 @@ vendor/lib64/libsensor_custom.so
 # Sensors (wrapper) - from duchamp_cn-user 14 UP1A.230905.011 V816.0.4.0.UNLCNXM release-keys
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|dd5bf92c9ae85083c42b6f084fb76c3388e4d2df
 
-# Sensors (citsensor)
-vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@1.1-service
-vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@1.1-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@1.1-service.xml
-vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so
-vendor/lib64/libhfmanagerwrapper.so
-vendor/lib64/libssccalapi.so
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
-
 # Soter
 vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
 vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc

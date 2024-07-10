@@ -16,7 +16,3 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                                 u:
 
 # Mtdservice
 vendor.xiaomi.hardware.mtdservice::IMTService                                 u:object_r:hal_mtdservice_hwservice:s0
-
-# Sensors
-vendor.xiaomi.hardware.citsensorservice::ICitSensorService                    u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
-vendor.xiaomi.sensor.citsensorservice::ICitSensorService                    u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
