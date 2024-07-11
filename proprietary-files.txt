@@ -1731,17 +1731,6 @@ vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
 
-# Media (OMX)
-vendor/lib/libMtkOmxAdpcmDec.so
-vendor/lib/libMtkOmxAlacDec.so
-vendor/lib/libMtkOmxCore.so
-vendor/lib/libMtkOmxGsmDec.so
-vendor/lib/libMtkOmxMp3Dec.so
-vendor/lib/libadpcmdec_mtk.so
-vendor/lib/libmp3dec_mtk.so
-vendor/lib/libstagefrighthw.so
-vendor/lib64/libstagefrighthw.so
-
 # Media (C2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;SYMLINK=vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
