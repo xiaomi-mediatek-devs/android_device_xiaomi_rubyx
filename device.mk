@@ -62,7 +62,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:32
 
 PRODUCT_PACKAGES += \
-    MtkInCallService
+    MtkInCallService \
+    XiaomiDolby
 
 PRODUCT_PACKAGES += \
     libdynproc:32 \
