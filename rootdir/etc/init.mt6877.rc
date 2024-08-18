@@ -872,6 +872,9 @@ on property:persist.vendor.mediatek.fg.log.enable=1
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
 
+on property:sys.boot_completed=1
+    restart android-hardware-media-c2-hal-1-2
+
 # VSIM service (vendor OSI)
 service osi /system/bin/osi
     class main
