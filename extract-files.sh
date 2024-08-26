@@ -59,6 +59,9 @@ fi
 
 function blob_fixup {
     case "$1" in
+        system_ext/priv-app/ImsService/ImsService.apk)
+            apktool_patch "${2}" "${MY_DIR}/blob-patches/ImsService.patch" -r
+            ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             grep -q "libstagefright_foundation-v33.so" "$2" || "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;
