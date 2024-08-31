@@ -63,6 +63,9 @@ PRODUCT_PACKAGES += \
     MtkInCallService
 
 PRODUCT_PACKAGES += \
+    android.hardware.audio@7.0.vendor:64
+
+PRODUCT_PACKAGES += \
     libaudiofoundation.vendor:32 \
     libbluetooth_audio_session:32 \
     libalsautils:32 \
