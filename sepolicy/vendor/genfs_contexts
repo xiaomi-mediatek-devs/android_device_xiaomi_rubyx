@@ -1,4 +1,5 @@
 # Display
+genfscon sysfs /devices/platform/14000000.dispsys_config/idle_state                                u:object_r:vendor_sysfs_display:s0
 genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/panel_info                      u:object_r:vendor_sysfs_display:s0
 
 # Fingerprint
