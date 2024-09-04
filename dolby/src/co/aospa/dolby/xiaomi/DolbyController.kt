@@ -125,7 +125,7 @@ internal class DolbyController private constructor(
             prefs.getString(
                 DolbyConstants.PREF_IEQ,
                 getIeqPreset(profile).toString()
-            ).toInt(),
+            )!!.toInt(),
             profile
         )
         setHeadphoneVirtEnabled(
