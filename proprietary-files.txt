@@ -1056,8 +1056,10 @@ vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/liblpcnr.so
 vendor/lib64/libm4u.so
 vendor/lib64/libmfllcore.so
+vendor/lib64/libmi_dspp.so
 vendor/lib64/libmiStereoFactoryRemapBasicLib.so
 vendor/lib64/libmiStereoFactoryRemapLib.so
+vendor/lib64/libmiXmlParser.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmialgo_ai_vision.so
 vendor/lib64/libmialgo_aio_seg.so
@@ -1557,6 +1559,7 @@ vendor/etc/init/microtrust.rc
 vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
 -vendor/etc/vintf/manifest/manifest_microtrust_wechat.xml
 -vendor/etc/vintf/manifest/microtrust_thh_manifest.xml
+vendor/lib/libthha.so
 vendor/lib/libTEECommon.so
 vendor/lib/libgz_gp_client.so
 vendor/lib/libgz_uree.so
@@ -1608,6 +1611,8 @@ vendor/thh/ta/isee_model.json
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml
+vendor/lib/libapu_mdw.so
+vendor/lib/libapusys.so
 vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer_v2.so
@@ -1662,6 +1667,7 @@ vendor/etc/init/vpud.rc
 vendor/lib/AV1SecureVdecCA.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so
+vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so
 vendor/lib/libh264enc_sa.ca7.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
@@ -1680,6 +1686,8 @@ vendor/lib/libvpu.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib/VP9SecureVdecCA.so
+vendor/lib64/libadpcmdec_mtk.so
+vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libvpu.so
 
 # Media (C2)
