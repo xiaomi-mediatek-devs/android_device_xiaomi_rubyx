@@ -384,7 +384,7 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.0-subhal-impl-1.0:64 \
-    android.hardware.sensors@2.1-service.xiaomi-multihal
+    android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal:64
