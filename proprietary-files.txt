@@ -1807,7 +1807,7 @@ vendor/lib64/secure_element-impl.so
 
 # Sensors
 vendor/etc/elliptic_sensor.xml
-vendor/lib64/hw/sensors.elliptic.so
+vendor/lib64/hw/sensors.elliptic.so:vendor/lib64/hw/sensors.elliptic@2.0.so
 vendor/lib64/hw/sensors.mt6877.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhwm.so
