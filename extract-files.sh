@@ -22,6 +22,8 @@ export TARGET_ENABLE_CHECKELF=true
 # Can still be used with broken XML files by using blob_fixup
 export TARGET_DISABLE_XML_FIXING=true
 
+export PATCHELF_VERSION=0_17_2
+
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
@@ -98,7 +100,7 @@ function blob_fixup {
             ;;
         vendor/lib64/libmnl.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF_0_17_2}" --add-needed "libcutils.so" "${2}"
+            "${PATCHELF}" --add-needed "libcutils.so" "${2}"
             ;;
         vendor/lib*/libteei_daemon_vfs.so|\
         vendor/lib64/libSQLiteModule_VER_ALL.so|\
@@ -108,7 +110,7 @@ function blob_fixup {
         vendor/lib64/lib3a.sensors.flicker.so|\
         vendor/lib64/libaaa_ltm.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF_0_17_2}" --add-needed "liblog.so" "${2}"
+            "${PATCHELF}" --add-needed "liblog.so" "${2}"
             ;;
         vendor/lib/libalsautils-v31.so|\
         vendor/lib64/libnotifyaudiohal.so|\
@@ -116,7 +118,7 @@ function blob_fixup {
         vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so|\
         vendor/lib/libspeech_enh_lib.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF_0_17_2}" --set-soname "$(basename "${1}")" "${2}"
+            "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.14-impl.so)
             [ "$2" = "" ] && return 0
